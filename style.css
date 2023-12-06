@@ -1,0 +1,94 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 16px;
+        border: none;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: green;
+        background-image: linear-gradient(rgb(6, 7, 6), rgb(15, 15, 15));
+    }
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        box-shadow: 3px 3px 0.5rem white;
+        background-color: rgba(255, 255, 255, 0.4);
+
+    }
+
+    .heading {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 1rem 2rem;
+        word-spacing: 0.5rem;
+        text-shadow: 0 3px 0.5rem white;
+        font-weight: 300;
+        font-size: 2rem;
+
+    }
+
+    .ratings_container{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 2%;
+    }
+
+    .rating{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom:2rem;
+        align-items: center;
+        padding: 1rem;
+        transition: all 300ms ease;
+
+    }
+
+    .rating:hover,.active{
+        background-color: darkseagreen;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 10px 4px 4px black;
+    }
+
+    .rating img{
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        cursor: pointer;
+        width: 50%;
+        padding: 0.75rem 1.2rem;
+        color: white;
+        background-Color: green;
+        outline: none;
+        transition: all 300ms ease;
+        border-radius: 5rem;
+    }
+
+    button:hover {
+        background-color: white;
+        color: green;
+        transform: scale(1.1);
+    }
+
+    button:active{
+        transform: scale(1.1);
+    }
