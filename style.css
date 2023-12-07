@@ -45,6 +45,19 @@
        display: grid;
        grid-template-columns: repeat(3,1fr);
        gap: 2%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .ratings_container-amended{
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
     }
 
     .rating{
@@ -59,11 +72,15 @@
 
     }
 
-    .rating:hover,.active{
+    .rating:hover{
         background-color: darkseagreen;
         color: white;
         border-radius: 20px;
         box-shadow: 10px 4px 4px black;
+    }
+
+    .active{
+        background-color: red;
     }
 
     .rating img{
